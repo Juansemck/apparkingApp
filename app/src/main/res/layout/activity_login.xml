@@ -14,14 +14,14 @@
         android:layout_width="328dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="336dp"
         android:layout_marginEnd="16dp"
         android:autofillHints=""
         android:hint="Usuario"
         android:inputType="text"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="VisualLintTextFieldSize" />
@@ -31,7 +31,7 @@
         android:layout_width="326dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:autofillHints=""
         android:hint="Contraseña"
@@ -39,7 +39,7 @@
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextUser"
         tools:ignore="VisualLintTextFieldSize" />
@@ -49,24 +49,28 @@
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="16dp"
-        android:background="#5271FF"
+        android:backgroundTint="#5271FF"
         android:radius="8dp"
         android:text="@string/ingresar"
-        android:textColor="#000000"
+        android:textColor="#FFFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        tools:ignore="TextContrastCheck" />
 
     <View
         android:id="@+id/circleView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="#5271FF"
         android:layout_alignParentTop="true"
+        android:background="#5271FF"
         android:clipChildren="false"
-        tools:ignore="MissingConstraints" />
+        android:contextClickable="false"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -80,6 +84,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.038"
         app:srcCompat="@drawable/logo_app" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/no_estas_registrado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:onClick="goToRegistroActivity"
+        android:text="@string/ingrese_aqui"
+        android:textColor="#2962FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
