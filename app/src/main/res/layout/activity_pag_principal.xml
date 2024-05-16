@@ -7,4 +7,45 @@
     android:layout_height="match_parent"
     tools:context=".pagPrincipalActivity">
 
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="415dp"
+        android:layout_height="270dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <FrameLayout
+        android:layout_width="414dp"
+        android:layout_height="136dp"
+        android:background="#223174"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="321dp"
+        android:background="#5271FF"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="409dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estos son los parqueaderos con cupos disponibles cerca de tu zonacerca de tu zona."
+            android:textColor="@color/white" />
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
