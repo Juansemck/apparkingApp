@@ -71,8 +71,8 @@
       android:layout_height="wrap_content"
       android:ems="10"
       android:inputType="number"
-      tools:layout_editor_absoluteX="175dp"
-      tools:layout_editor_absoluteY="256dp" />
+      tools:layout_editor_absoluteX="183dp"
+      tools:layout_editor_absoluteY="265dp" />
 
   <EditText
       android:id="@+id/editTextText3"
@@ -81,8 +81,7 @@
       android:ems="10"
       android:inputType="text"
       android:text="Name"
-      app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
-      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteX="20dp"
       tools:layout_editor_absoluteY="265dp" />
 
   <EditText
