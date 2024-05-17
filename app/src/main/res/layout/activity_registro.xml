@@ -69,10 +69,13 @@
       android:id="@+id/editTextNumber"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:autofillHints=""
       android:ems="10"
       android:inputType="number"
+      android:minHeight="48dp"
       tools:layout_editor_absoluteX="183dp"
-      tools:layout_editor_absoluteY="265dp" />
+      tools:layout_editor_absoluteY="265dp"
+      tools:ignore="MissingConstraints" />
 
   <EditText
       android:id="@+id/editTextText3"
@@ -91,7 +94,8 @@
       android:ems="10"
       android:inputType="number"
       tools:layout_editor_absoluteX="24dp"
-      tools:layout_editor_absoluteY="325dp" />
+      tools:layout_editor_absoluteY="325dp"
+      tools:ignore="MissingConstraints" />
 
   <EditText
       android:id="@+id/editTextTextEmailAddress"
@@ -127,7 +131,8 @@
       android:backgroundTint="@color/base_blue"
       android:text="Siguiente"
       tools:layout_editor_absoluteX="151dp"
-      tools:layout_editor_absoluteY="633dp" />
+      tools:layout_editor_absoluteY="633dp"
+      tools:ignore="MissingConstraints" />
 
   <TextView
       android:id="@+id/textView5"
@@ -136,6 +141,7 @@
       android:text="APPARKING"
       android:textColor="#5271FF"
       tools:layout_editor_absoluteX="167dp"
-      tools:layout_editor_absoluteY="696dp" />
+      tools:layout_editor_absoluteY="696dp"
+      tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
