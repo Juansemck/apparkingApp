@@ -13,10 +13,13 @@
         android:theme="@style/Theme.Apparkingxd"
         tools:targetApi="31">
         <activity
+            android:name=".selectUserType"
+            android:exported="false" />
+        <activity
             android:name=".pagPrincipalActivity"
             android:exported="false" />
         <activity
-            android:name=".datosAutoActivity"
+            android:name=".DatosAutoActivity"
             android:exported="false" />
         <activity
             android:name=".Exito"

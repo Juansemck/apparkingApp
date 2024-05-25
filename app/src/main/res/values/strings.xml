@@ -8,4 +8,7 @@
     <string name="no_estas_registrado">¿No estas registrado?</string>
     <string name="ingrese_aqui">ingrese aqui</string>
     <string name="registro">REGISTRO</string>
+    <string name="back_button">Botón de retroceso</string>
+    <string name="logo_image">Imagen de pie de página</string>
+
 </resources>
