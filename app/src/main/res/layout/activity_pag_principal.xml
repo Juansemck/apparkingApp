@@ -1,51 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pagPrincipalActivity">
+    tools:context=".PagPrincipalActivity"
+    android:background="#f0f0f0">
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="415dp"
-        android:layout_height="270dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="138dp" />
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#003399"
+        android:padding="8dp">
 
-    <FrameLayout
-        android:layout_width="414dp"
-        android:layout_height="136dp"
-        android:background="#223174"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        <!-- Icon -->
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="44dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icono_b" />
 
+        <!-- Close Button -->
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cerrar" />
+    </RelativeLayout>
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Welcome Text -->
         <TextView
-            android:id="@+id/textView7"
-            android:layout_width="127dp"
-            android:layout_height="wrap_content"
-            android:text="Bienvenido"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="409dp"
-        android:layout_height="321dp"
-        android:background="#5271FF"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="409dp"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Estos son los parqueaderos con cupos disponibles cerca de tu zonacerca de tu zona."
-            android:textColor="@color/white" />
-    </FrameLayout>
+            android:text="Bienvenido"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estos son los parqueaderos con cupos disponibles cerca de tu zona."
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Map -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/map_image"
+            android:scaleType="centerCrop"
+            android:background="#e0e0e0"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Parking List Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parqueaderos en tu zona"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Parking Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First Parking Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="#f9f9f9"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp"
+                android:elevation="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="La estancia"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="57r Sur, Cra. 75, Bogotá"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Second Parking Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f9f9f9"
+                android:elevation="1dp"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Barrio Simon Bolivar"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#a 63-36, Cl. 79a #632, Bogotá"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
