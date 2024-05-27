@@ -103,7 +103,7 @@
         android:clickable="true"
         android:focusable="true"
         android:minHeight="48dp"
-        android:onClick="goToRegistroActivity"
+        android:onClick="goToSelectUserTypeActivity"
         android:text="@string/ingrese_aqui"
         android:textColor="#2962FF"
         app:layout_constraintEnd_toEndOf="parent"
